@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Men's Grooming Blog | Haircut Tips & Beard Care | Mobile Barber LLC</title>
+  <meta name="description" content="Expert men's grooming tips, haircut guides, fade tutorials, and beard care advice from your mobile barber in Rocky Mount, Greenville, Wilson & Tarboro NC." />
+  <meta name="keywords" content="men's grooming blog, haircut tips, fade haircut guide, beard care tips, mobile barber blog, barber tips Rocky Mount, men's hairstyle guide" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="../css/brand-style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #000;
+      color: #ddd;
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .blog-listing-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .blog-header {
+      text-align: center;
+      margin-bottom: 60px;
+      padding-top: 60px;
+    }
+    .back-link {
+      color: #ff1d46;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    .page-subtitle {
+      color: #ff1d46;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+    }
+    .page-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 42px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .page-description {
+      color: #888;
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .blog-card {
+      background: #111;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #222;
+    }
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 40px rgba(255, 29, 70, 0.15);
+    }
+    .blog-card-image {
+      width: 100%;
+      height: 220px;
+      background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .blog-card-image::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(255, 29, 70, 0.1), transparent);
+    }
+    .blog-card-icon {
+      font-size: 64px;
+      color: #ff1d46;
+      opacity: 0.3;
+    }
+    .blog-card-content {
+      padding: 25px;
+    }
+    .blog-card-category {
+      background: #ff1d46;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+    .blog-card-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+    .blog-card-title a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .blog-card-title a:hover {
+      color: #ff1d46;
+    }
+    .blog-card-excerpt {
+      color: #888;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .blog-card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 15px;
+      border-top: 1px solid #222;
+      font-size: 13px;
+      color: #666;
+    }
+    .read-more-link {
+      color: #ff1d46;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: gap 0.3s ease;
+    }
+    .read-more-link:hover {
+      gap: 10px;
+    }
+    .cta-section {
+      background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+      padding: 60px 40px;
+      border-radius: 16px;
+      text-align: center;
+      margin-top: 80px;
+      border: 1px solid #333;
+    }
+    .cta-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 28px;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+    .cta-section p {
+      color: #888;
+      margin-bottom: 25px;
+      font-size: 16px;
+    }
+    .cta-button {
+      background: #ff1d46;
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+    .cta-button:hover {
+      background: #e0183d;
+      transform: translateY(-2px);
+    }
+    @media (max-width: 768px) {
+      .page-title {
+        font-size: 32px;
+      }
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+      .blog-header {
+        padding-top: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="blog-listing-container">
+    <a href="../index.html" class="back-link">
+      <span class="material-icons">arrow_back</span> Back to Home
+    </a>
+    
+    <header class="blog-header">
+      <p class="page-subtitle">Mobile Barber LLC</p>
+      <h1 class="page-title">Men's Grooming Tips & Haircut Guides</h1>
+      <p class="page-description">Expert advice on fades, beard care, and men's hairstyles from your trusted mobile barber serving Rocky Mount, Greenville, Wilson & Tarboro NC.</p>
+    </header>
+
+    <div class="blog-grid">
+      <!-- Blog Card 1 -->
+      <article class="blog-card">
+        <div class="blog-card-image">
+          <span class="material-icons blog-card-icon">content_cut</span>
+        </div>
+        <div class="blog-card-content">
+          <span class="blog-card-category">Fade Haircuts</span>
+          <h2 class="blog-card-title">
+            <a href="low-taper-fade-guide.html">Low Taper Fade vs Skin Fade: Which Haircut is Right for You?</a>
+          </h2>
+          <p class="blog-card-excerpt">Learn the key differences between low taper fades and skin fades, including maintenance tips, best face shapes for each style, and how to choose the perfect fade for your lifestyle.</p>
+          <div class="blog-card-meta">
+            <span>March 20, 2026 · 8 min read</span>
+            <a href="low-taper-fade-guide.html" class="read-more-link">Read More <span class="material-icons" style="font-size: 16px;">arrow_forward</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog Card 2 -->
+      <article class="blog-card">
+        <div class="blog-card-image">
+          <span class="material-icons blog-card-icon">face</span>
+        </div>
+        <div class="blog-card-content">
+          <span class="blog-card-category">Beard Care</span>
+          <h2 class="blog-card-title">
+            <a href="beard-grooming-guide.html">How to Maintain Your Beard Between Barber Visits: Expert Tips</a>
+          </h2>
+          <p class="blog-card-excerpt">Discover essential beard grooming tips to keep your facial hair looking sharp between professional trims. Learn about beard oils, trimming techniques, and common mistakes to avoid.</p>
+          <div class="blog-card-meta">
+            <span>March 18, 2026 · 7 min read</span>
+            <a href="beard-grooming-guide.html" class="read-more-link">Read More <span class="material-icons" style="font-size: 16px;">arrow_forward</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog Card 3 -->
+      <article class="blog-card">
+        <div class="blog-card-image">
+          <span class="material-icons blog-card-icon">home</span>
+        </div>
+        <div class="blog-card-content">
+          <span class="blog-card-category">Mobile Barber</span>
+          <h2 class="blog-card-title">
+            <a href="mobile-barber-benefits.html">5 Benefits of Hiring a Mobile Barber for At-Home Haircuts</a>
+          </h2>
+          <p class="blog-card-excerpt">Find out why more men in Eastern NC are choosing mobile barber services. From time savings to personalized attention, discover the advantages of getting haircuts at your door.</p>
+          <div class="blog-card-meta">
+            <span>March 15, 2026 · 6 min read</span>
+            <a href="mobile-barber-benefits.html" class="read-more-link">Read More <span class="material-icons" style="font-size: 16px;">arrow_forward</span></a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="cta-section">
+      <h2>Ready to Experience Premium Mobile Barber Service?</h2>
+      <p>Book your at-home haircut today. Serving Rocky Mount, Greenville, Wilson & Tarboro NC.</p>
+      <a href="https://book.squareup.com/appointments/gjgrt9galj07o3/location/LP4JBG34YGBYD/services" target="_blank" class="cta-button">Book Your Appointment</a>
+    </div>
+
+    <div style="text-align: center; margin-top: 60px; padding-top: 40px; border-top: 1px solid #222;">
+      <p style="color: #666; font-size: 14px;">Mobile Barber LLC · (919) 809-0529 · Rocky Mount, Greenville, Wilson, Tarboro NC</p>
+      <a href="../index.html" style="color: #ff1d46; text-decoration: none; font-size: 14px;">← Return to Main Website</a>
+    </div>
+  </div>
+</body>
+</html>
