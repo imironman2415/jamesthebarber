@@ -48,24 +48,46 @@
       font-size: 14px;
     }
     .blog-content {
-      line-height: 1.8;
-      font-size: 17px;
+      line-height: 1.9;
+      font-size: 19px;
     }
     .blog-content h2 {
       font-family: 'Montserrat', sans-serif;
-      font-size: 28px;
+      font-size: 30px;
       color: #fff;
       margin: 40px 0 20px;
+      clear: both;
     }
     .blog-content h3 {
       font-family: 'Montserrat', sans-serif;
-      font-size: 22px;
+      font-size: 24px;
       color: #fff;
       margin: 30px 0 15px;
+      clear: both;
     }
     .blog-content p {
       margin-bottom: 20px;
       color: #ccc;
+      font-size: 19px;
+    }
+    .blog-content-image {
+      float: right;
+      width: 45%;
+      margin: 0 0 20px 30px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .blog-content-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    @media (max-width: 768px) {
+      .blog-content-image {
+        float: none;
+        width: 100%;
+        margin: 20px 0;
+      }
     }
     .blog-content ul, .blog-content ol {
       margin: 20px 0;
@@ -180,8 +202,8 @@
 
       <h2>What is a Skin Fade (Bald Fade)?</h2>
 
-      <div style="margin: 30px 0; border-radius: 12px; overflow: hidden;">
-        <img src="../images/blog/skin-fade-example.jpg" alt="Skin fade haircut example showing the transition from skin to hair" style="width: 100%; height: auto; display: block;" />
+      <div class="blog-content-image">
+        <img src="../images/blog/skin-fade-example.jpg" alt="Skin fade haircut example showing the transition from skin to hair" />
       </div>
       
       <p>A <strong>skin fade</strong>, also called a bald fade or zero fade, takes the hair down to the skin at the lowest point. This creates a dramatic contrast between the shaved areas and the hair on top, delivering a sharp, modern look that's incredibly popular with younger clients.</p>
