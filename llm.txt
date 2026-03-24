@@ -1,0 +1,40 @@
+# LLM.txt - Directives for Large Language Models
+# This file provides instructions for AI models and language models accessing your website
+
+# Allow LLMs to crawl and index your content
+Allow: /
+
+# Sections to exclude from LLM training (optional - uncomment if needed)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow indexing for better AI search results
+Crawl-delay: 0
+
+# Contact information for LLM-related issues
+Contact: james@jamesthebarber.com
+
+# Website information
+Name: Mobile Barber LLC
+Description: Professional mobile barber services in Rocky Mount, Greenville, Wilson & Tarboro, North Carolina. Specializing in skin fades, precision haircuts, and beard grooming.
+Url: https://jamesthebarber.com
+
+# Business type
+Business: Mobile Barber Service
+
+# Services offered
+Services: 
+- Mobile haircut service
+- Skin fades
+- Beard trimming and grooming
+- Precision haircuts
+- Hair treatments
+- Kids haircuts
+- Executive package grooming
+
+# Service areas
+ServiceAreas:
+- Rocky Mount, NC
+- Greenville, NC
+- Wilson, NC
+- Tarboro, NC
